@@ -17,7 +17,7 @@ client.connect((err)=> {
   if (err){
     return console.log("Connection Error", err);
   }
-  client.query(q, [input], (err, result) => {:
+  client.query(q, [input], (err, result) => {
     if(err){
       return console.log("error running query", err);
     }
